@@ -12,18 +12,31 @@
 // 
 // CALCULO = (n1 * n2) – (n3 * n4)
 
+// Cabeçalho
+console.log("===============================================================")
+console.log("========================= Atividade 4 =========================")
+console.log("===============================================================\n")
 
-//entrada de dados
-let read = require("readline-sync")
+// Declaração de variaveis
+let n1, n2, n3, n4, read, produto
 
-let n1 = read.questionFloat("Digite o primeiro valor: ")
-let n2 = read.questionFloat("Digite o segundo valor: ")
-let n3 = read.questionFloat("Digite o terceiro valor: ")
-let n4 = read.questionFloat("digite o quarto valor: ")
+// Entrada de dados
+read = require("readline-sync")
+n1 = read.questionFloat("Digite o primeiro valor: ")
+n2 = read.questionFloat("Digite o segundo valor: ")
+n3 = read.questionFloat("Digite o terceiro valor: ")
+n4 = read.questionFloat("digite o quarto valor: ")
 
-//processamento de dados
-let calculo = (n1 * n2) - (n3 * n4)
-//impressão na tela do terminal
-console.log(`A diferença do produto entre ${n1} e ${n2} pelo produto entre ${n3} e ${n4} é: ${calculo.toFixed(1)}`)
+// Função
+function calculoProduto(n1, n2, n3, n4) {
+    calculo = (n1 * n2) - (n3 * n4)
+    return calculo.toFixed(1)
+}
+
+// Processamento de dados
+produto = calculoProduto(n1, n2, n3, n4)
+
+// Impressão na tela do terminal
+console.log(`A diferença do produto entre ${n1} e ${n2} pelo produto entre ${n3} e ${n4} é: ${produto}`)
 
 

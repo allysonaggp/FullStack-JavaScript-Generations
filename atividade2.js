@@ -11,15 +11,30 @@
 //
 // CALCULAR MÉDIA = (NOTA1 + NOTA2 + NOTA3 + NOTA4) / 4
 
+// Cabeçalho
+console.log("===============================================================")
+console.log("========================= Atividade 2 =========================")
+console.log("===============================================================\n")
 
+// Declaração de variaveis
+let read, nota1, nota2, nota3, nota4, media
 // Entrada de dados.
-let read = require("readline-sync")
+read = require("readline-sync")
 
-let nota1 = read.questionFloat("Digite o valor da primeira nota: ")
-let nota2 = read.questionFloat("Digite o valor da segunda nota: ")
-let nota3 = read.questionFloat("Digite o valor da terceira nota: ")
-let nota4 = read.questionFloat("Digite o valor da quarta nota: ")
+nota1 = read.questionFloat("Digite o valor da primeira nota: ")
+nota2 = read.questionFloat("Digite o valor da segunda nota: ")
+nota3 = read.questionFloat("Digite o valor da terceira nota: ")
+nota4 = read.questionFloat("Digite o valor da quarta nota: ")
+
+// Função
+function calculoMedia(nota1, nota2, nota3, nota4) {
+    calculo = (nota1 + nota2 + nota3 + nota4) / 4
+    return calculo.toFixed(1)
+}
+
 // Processamento de dados
-Media=(nota1+nota2+nota3+nota4)/4
-//impressão no terminal
-console.log(`A média é: ${Media.toFixed(1)}`)
+media = calculoMedia(nota1, nota2, nota3, nota4)
+
+
+// Impressão no terminal
+console.log(`A média é: ${media}`)
