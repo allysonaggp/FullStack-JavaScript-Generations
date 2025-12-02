@@ -71,6 +71,7 @@ console.log("\n")
 for (let i = numero1; i <= numero2; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log(`${i} é múltiplo de 3 e 5`)
+                
     }
 
 }
