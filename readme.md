@@ -31,15 +31,14 @@ FullStack-JavaScript-Generations/
    ```bash
    git clone https://github.com/allysonaggp/FullStack-JavaScript-Generations.git
 
-
 
-- Acesse a pasta do projeto:
+2. **Acesse a pasta do projeto:**
 cd FullStack-JavaScript-Generations
-- Instale as dependências:
+
+3. **Instale as dependências:**
 npm install
 
-
-- Execute os arquivos com Node.js:
+4. **Execute os arquivos com Node.js:**
 node variaveis/exercicio1.js
 
 
